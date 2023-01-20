@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(20, 20, 20);
+    margin:0;
+    font-family: sans-serif;
+    color: white;
+    
+}
+
+.container {
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr;
+    gap: 5px;
+    margin: 0 20px;
+}
+
+
+
+/* Encabezados ocupando un row entero */
+.box1, .box2, .box8, .box14, .box20 {
+    grid-column: 1 / 6;
+}
+
+#navbar, a {
+    color: white;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 100px;
+}
+
+#nav-1, #nav-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0;
+    margin: 0;
+    
+}
+#nav-1 {
+    margin-left: 20px;
+    width: 50vw;
+    font-size: 0.8rem;
+}
+
+#nav-2 {
+    width: 20vw;
+    margin-right:20px;
+    font-size: 1.2rem;
+}
+
+
+li {
+    
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}  
+
+#sign-in {
+    height:20px;
+    width:20px;
+    background-image: url(../img/flat\,750x\,075\,f-pad\,750x1000\,f8f8f8.u3.jpg);
+    background-size:cover;
+}
+
+h1 {
+    font-size: 1.1rem;
+}
+
+.box3 {
+    background-image: url(../img/doc1.JPG);
+    background-size: cover;
+}
+
+.box4 {
+    background-image: url(../img/doc2.JPG);
+    background-size: cover;
+}
+
+.box5 {
+    background-image: url(../img/doc3.JPG);
+    background-size: cover;
+}
+
+.box6 {
+    background-image: url(../img/doc4.JPG);
+    background-size: cover;
+}
+
+.box7 {
+    background-image: url(../img//doc5.JPG);
+    background-size: cover;
+}
+
+.box9 {
+    background-image: url(../img/vol1.jpg);
+    background-size: cover;
+}
+
+.box10 {
+    background-image: url(../img/vol2.jpg);
+    background-size: cover;
+}
+
+.box11 {
+    background-image: url(../img/vol3.jpg);
+    background-size: cover;
+}
+
+.box12 {
+    background-image: url(../img/vol4.JPG);
+    background-size: cover;
+}
+
+.box13{
+    background-image: url(../img/vol5.JPG);
+    background-size: cover;
+}
+
+.box15{
+    background-image: url(../img/eeuu1.JPG);
+    background-size: cover;
+}
+
+.box16{
+    background-image: url(../img/eeuu2.JPG);
+    background-size: cover;
+}
+
+.box17 {
+    background-image: url(../img/eeuu3.JPG);
+    background-size: cover;
+}
+
+.box18 {
+    background-image: url(../img/eeuu4.JPG);
+    background-size: cover;
+}
+
+.box19 {
+    background-image: url(../img/eeuu5.JPG);
+    background-size: cover;
+}
+
+.box21{
+    background-image: url(../img/top1.JPG);
+    background-size: cover;
+}
+
+.box22 {
+    background-image: url(../img/top2.JPG);
+    background-size: cover;
+}
+
+.box23 {
+    background-image: url(../img/top3.JPG);
+    background-size: cover;
+}
+
+.box24 {
+    background-image: url(../img/top4.JPG);
+    background-size: cover;
+}
+.box25 {
+    background-image: url(../img/top5.JPG);
+    background-size: cover;
+}
