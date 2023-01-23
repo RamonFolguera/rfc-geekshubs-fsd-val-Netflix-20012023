@@ -8,7 +8,8 @@ body {
     margin:0;
     font-family: sans-serif;
     color: white;
-    
+    height: 100vh;
+    display: flex;
 }
 
 .container {
@@ -18,9 +19,8 @@ body {
     grid-template-rows: 1fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr;
     gap: 5px;
     margin: 50px 20px;
+    width: 100vw;
 }
-
-
 
 /* Encabezados ocupando un row entero */
 .box1, .box2, .box8, .box14, .box20 {
@@ -31,11 +31,18 @@ body {
     color: white;
 }
 
+#navbar, a:hover {
+    color: rgb(250, 250, 148);
+}
+
 #navbar {
+    background-color: rgb(20, 20, 20);
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    width: 100%;
+    
 }
 
 img {
@@ -180,4 +187,51 @@ h1 {
 .box25 {
     background-image: url(../img/top5.JPG);
     background-size: cover;
+}
+
+
+
+@media (max-width: 360px) {
+    .container {
+        display: block;
+        margin: 50px 10px;
+        
+    }
+
+
+    .box {
+        margin: 10px 0;
+        width: 100%;
+        height: 100px;
+    }
+    #navbar {
+        display: block;
+        align-items: center;
+        position: fixed;
+    }
+
+    #nav-1, #nav-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0;
+        margin: 0 20px;
+        width: 90%;
+    }
+
+    #nav-1 {
+        display: none;
+    }
+
+    #nav-2 {
+        height: 50px;
+    }
+
+    .box {
+    height: 200px;
+    } 
+
+    .box2, .box8, .box14, .box20 {
+        height: 20px;
+    }
 }
